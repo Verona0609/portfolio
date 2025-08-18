@@ -1,0 +1,32 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 100vh;
+  background-color: #fff; /* білий фон */
+  background-image:
+    linear-gradient(to right, rgba(69, 69, 69, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(124, 124, 124, 0.08) 1px, transparent 1px);
+  background-size: 30px 30px; /* розмір клітинки */
+}
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('data:image/png;base64,...'); /* Вставте тут ваше зображення шуму */
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+@keyframes moveBackground {
+  0% { background-position: 0 0; }
+  100% { background-position: 100% 100%; }
+}
+
+/* body {
+  animation: moveBackground 10s linear infinite;
+} */
