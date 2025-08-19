@@ -3,9 +3,11 @@ import css from './Title.module.css'
 
 const Title = () => {
   return (
-    <div>
+
+    <div className={css.background}>
 
      <h1 className={css.title}>VERONIKA</h1>
+
     </div>
 
 

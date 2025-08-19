@@ -1,32 +1,103 @@
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  height: 100vh;
-  background-color: #fff; /* білий фон */
-  background-image:
-    linear-gradient(to right, rgba(69, 69, 69, 0.08) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(124, 124, 124, 0.08) 1px, transparent 1px);
-  background-size: 30px 30px; /* розмір клітинки */
+:root{
+  --font-family: 'Inter', sans-serif;
+
+    /* Ваги шрифтів */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+
+  /* Colors */
+
+  --grid: rgba(69, 69, 69, 0.08);
 }
-body::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+
+body{
+ padding: 0;
+  box-sizing: border-box;
+  /* font-family: var(--font-family); */
+  font-weight: var(--font-weight-regular);
   height: 100%;
-  background: url('data:image/png;base64,...'); /* Вставте тут ваше зображення шуму */
-  opacity: 0.1;
-  pointer-events: none;
+  margin: 0 auto;
+  overflow-x: hidden;
 }
 
-@keyframes moveBackground {
-  0% { background-position: 0 0; }
-  100% { background-position: 100% 100%; }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-/* body {
-  animation: moveBackground 10s linear infinite;
-} */
+.container {
+  width: 100%;
+  max-width: 1440px;
+  overflow-x: hidden;
+  margin: 0 auto;
+  padding: 48px 54px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+ /*  font-family: var(--font-family); */
+  font-weight: var(--font-weight-regular);
+}
+
+p {
+  margin: 0;
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-regular);
+}
+input {
+  border: none;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+@media only screen and (min-width: 390px) {
+  .container {
+    padding: 50px 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    margin: 0 auto;
+    padding: 48px 54px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .container {
+    padding: 48px 54px;
+    max-width: 1400px;
+    margin: auto;
+  }
+}
+
+
+

@@ -4,7 +4,9 @@ import Title from '../components/Title/Title';
 
 const HomePage = () => {
   return (
+
     <Title/>
+
   )
 }
 

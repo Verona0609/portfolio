@@ -1,3 +1,15 @@
+.background{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 100vh;
+  background-color: #fff; /* білий фон */
+  background-image:
+    linear-gradient(to right, var(--grid) 1px, transparent 1px),
+    linear-gradient(to bottom,var(--grid)1px, transparent 1px);
+  background-size: 30px 30px; /* розмір клітинки */
+}
 .title{
-  font-size: 106px;
+  font-size: 156px;
 }
