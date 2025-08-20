@@ -9,7 +9,11 @@
     linear-gradient(to right, var(--grid) 1px, transparent 1px),
     linear-gradient(to bottom,var(--grid)1px, transparent 1px);
   background-size: 30px 30px; /* розмір клітинки */
+
+
 }
 .title{
-  font-size: 156px;
+  font-size: 100px;
+  font-weight: 800;
+/*   transform: rotate(30deg); */
 }

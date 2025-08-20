@@ -6,7 +6,7 @@ export default defineConfig({
   base: '/',
   plugins: [
     react(),
-    svgr(), // Додаємо підтримку SVG
+    svgr(), 
   ],
   build: {
     sourcemap: true,
