@@ -8,7 +8,7 @@
 
   /* Colors */
 
-  --grid: rgba(69, 69, 69, 0.08);
+  --grid: hsl(0 0% 93% 0%);
 }
 
 body{
