@@ -1,19 +1,65 @@
-.background{
+.background {
   display: flex;
+  flex-direction: column; /* вертикальна структура */
   justify-content: center;
   align-items: center;
   margin: 0;
   height: 100vh;
-  background-color: #fff; /* білий фон */
+  background-color: #fff;
   background-image:
-    linear-gradient(to right, var(--grid) 1px, transparent 1px),
-    linear-gradient(to bottom,var(--grid)1px, transparent 1px);
-  background-size: 30px 30px; /* розмір клітинки */
+    linear-gradient(to right, hsl(0 0% 96%/ 1) 1px, transparent 1px),
+    linear-gradient(to bottom,hsl(0 0% 96%/ 1) 1px, transparent 1px);
+  background-size: 40px 40px;
+  gap: 40px; /* відстань між картками та ім’ям */
+}
 
+.title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: clamp(80px, 10vw, 150px);
+  letter-spacing: -0.05em;
+  line-height: 1.2;
+  color: #111111;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.top {
+  transform: translateY(-40px);
+}
+
+.bottom {
+  margin-top: -20px;
+}
+
+.topCards, .bottomCards {
+  display: flex;
+  justify-content: center; /* центруємо картки над і під ім’ям */
+  gap: 200px;
 
 }
-.title{
-  font-size: 100px;
-  font-weight: 800;
-/*   transform: rotate(30deg); */
+
+.card {
+  padding: 20px 30px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+ width: 200px;
+ height: 200px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  text-align: center;
+    transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background-color: #ff6b6b;
+  color:#fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
