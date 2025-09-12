@@ -7,7 +7,7 @@
   height: 100vh;
   background-color: #fff;
   background-image:
-    linear-gradient(to right, hsl(0 0% 96%/ 1) 1px, transparent 1px),
+    linear-gradient(to right,hsl(0 0% 96%/ 1) 1px, transparent 1px),
     linear-gradient(to bottom,hsl(0 0% 96%/ 1) 1px, transparent 1px);
   background-size: 40px 40px;
   gap: 40px; /* відстань між картками та ім’ям */
@@ -38,7 +38,7 @@
 
 .topCards, .bottomCards {
   display: flex;
-  justify-content: center; /* центруємо картки над і під ім’ям */
+  justify-content: center;
   gap: 200px;
 
 }
