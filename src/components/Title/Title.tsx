@@ -1,19 +1,21 @@
-import React from 'react'
+
+import Footer from '../Footer/Footer';
 import css from './Title.module.css'
+import { Link } from 'react-router-dom';
 
 const Title = () => {
   return (
    <div className={css.background}>
 
   <div className={css.topCards}>
-    <div className={css.card} onClick={() => window.location.href="/about"}>
+    <Link className={`${css.card} ${css.card1}`} to="/about">
       About Me
-    </div>
-    <div className={css.card} onClick={() => window.location.href="/projects"}>
+    </Link>
+    <Link className={`${css.card} ${css.card1}`} to="/projects">
       Projects
-    </div>
+    </Link>
   </div>
-
+<div className={css.titleContainer}>
   <h1 className={css.title}>
     <span className={css.top}>V</span>
     <span className={css.bottom}>E</span>
@@ -24,16 +26,16 @@ const Title = () => {
     <span className={css.top}>K</span>
     <span className={css.bottom}>A</span>
   </h1>
-
+</div>
   <div className={css.bottomCards}>
-    <div className={css.card} onClick={() => window.location.href="/thoughts"}>
-      Thoughts
-    </div>
-    <div className={css.card} onClick={() => window.location.href="/justme"}>
+    <Link className={css.card} to="/tools">
+      Tools
+    </Link>
+    <Link className={css.card} to="/justme">
       Just Me
-    </div>
+    </Link>
   </div>
-
+<Footer/>
 </div>
 
   )

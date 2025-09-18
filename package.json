@@ -1,5 +1,5 @@
 {
-  "name": "vanilla-app-template",
+  "name": "portfolio",
   "private": true,
   "version": "1.0.0",
   "type": "module",
@@ -9,9 +9,12 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@types/react": "^19.1.13",
+    "@types/react-dom": "^19.1.9",
     "glob": "^11.0.0",
     "postcss": "^8.4.41",
     "postcss-sort-media-queries": "^5.2.0",
+    "typescript": "^5.9.2",
     "vite": "^5.4.6"
   },
   "author": "Veronika Dyka",

@@ -6,7 +6,7 @@ import '../src/main.css';
 
 //import { Provider } from 'react-redux';
 
-createRoot(document.getElementById('root')).render(
+createRoot(document.getElementById('root')!).render(
   <BrowserRouter>
       <App />
   </BrowserRouter>
