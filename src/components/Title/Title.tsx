@@ -1,5 +1,4 @@
 
-import Footer from '../Footer/Footer';
 import css from './Title.module.css'
 import { Link } from 'react-router-dom';
 
@@ -35,7 +34,7 @@ const Title = () => {
       Just Me
     </Link>
   </div>
-<Footer/>
+
 </div>
 
   )

@@ -8,11 +8,11 @@ const Footer = () => {
 <div className={css.box}>
 <Link className={css. menuItem} to="/"><Icon  id="icon-home" className={css.icon} size={22}/>
 </Link>
-<Link className={css. menuItem} to="/"><Icon  id="icon-light" className={css.icon} size={22}/>
+<Link className={css. menuItem} to="/projects"><Icon  id="icon-light" className={css.icon} size={22}/>
 </Link>
-<Link className={css. menuItem} to="/"><Icon  id="icon-stack" className={css.icon} size={22}/>
+<Link className={css. menuItem} to="/tools"><Icon  id="icon-stack" className={css.icon} size={22}/>
 </Link>
-<Link className={css. menuItem} to="/"><Icon  id="icon-user" className={css.icon} size={22}/>
+<Link className={css. menuItem} to="/aboutme"><Icon  id="icon-user" className={css.icon} size={22}/>
 </Link>
 <a  className={css. menuItem} href=""><Icon  id="icon-github" className={css.icon} size={22}/></a>
 <a   className={css. menuItem} href=""><Icon  id="icon-linkedin" className={css.icon} size={22}/></a>

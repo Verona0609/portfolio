@@ -1,0 +1,9 @@
+.wrap {
+  min-height: 100vh;           /* весь екран */
+  display: flex;
+  flex-direction: column;       /* вертикальне розташування */
+}
+
+.content {
+  flex: 1;                      /* займає весь простір між верхом і футером */
+}

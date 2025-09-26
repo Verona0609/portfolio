@@ -1,4 +1,9 @@
 .background {
+    display: flex;
+  flex-direction: column;
+  justify-content: center; /* вертикальне центрування */
+  align-items: center;     /* горизонтальне центрування */
+  min-height: 100vh;
   margin: 0;
    margin-bottom:  60px;
   height: 100%;
@@ -8,12 +13,9 @@
     linear-gradient(to bottom,hsl(0 0% 96%/ 1) 1px, transparent 1px);
   background-size: 40px 40px;
   gap: 40px;
+   padding-bottom: 156px;
 }
-.titleContainer{
-  display: flex;
-  justify-content: center;
-  align-items:center;
-}
+
 
 .title {
   font-family: 'Inter', sans-serif;
@@ -38,19 +40,22 @@
   margin-top: -20px;
 }
 
- .topCards{
-  padding: 20px 0 40px 176px;
+
+.topCards {
   display: flex;
   gap: 400px;
- }
+  padding: 20px 176px 40px 0;
+     flex-wrap: wrap;
+  justify-content: flex-start;
+}
 
- .bottomCards{
-  padding: 0 0 0 250px;
+.bottomCards {
   display: flex;
-  gap: 500px;
- }
-
-
+  gap: 400px;
+  padding-left: 250px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
 
 .card {
   padding: 20px 30px;
