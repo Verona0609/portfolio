@@ -1,6 +1,6 @@
 footer{
   position: fixed;      /* фіксуємо футер на екрані */
-  bottom: 100px;        /* відступ від низу */
+  bottom: 20px;        /* відступ від низу */
   left: 50%;            /* по центру горизонтально */
   transform: translateX(-50%); /* центр по горизонталі */
   display: flex;

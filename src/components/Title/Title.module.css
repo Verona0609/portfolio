@@ -5,7 +5,7 @@
   align-items: center;     /* горизонтальне центрування */
   min-height: 100vh;
   margin: 0;
-   margin-bottom:  60px;
+
   height: 100%;
   background-color: #fff;
   background-image:
@@ -13,7 +13,7 @@
     linear-gradient(to bottom,hsl(0 0% 96%/ 1) 1px, transparent 1px);
   background-size: 40px 40px;
   gap: 40px;
-   padding-bottom: 156px;
+
 }
 
 
@@ -26,7 +26,7 @@
   color: #111111;
   text-align: center;
   margin: 0;
-  padding: 20px;
+ /*  padding: 20px; */
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -44,17 +44,18 @@
 .topCards {
   display: flex;
   gap: 400px;
-  padding: 20px 176px 40px 0;
+  padding: 10px 276px 20px 0;
      flex-wrap: wrap;
   justify-content: flex-start;
 }
 
 .bottomCards {
   display: flex;
-  gap: 400px;
-  padding-left: 250px;
+  gap: 520px;
+  padding-left: 100px;
   flex-wrap: wrap;
   justify-content: flex-start;
+  margin-bottom: 150px;
 }
 
 .card {
