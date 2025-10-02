@@ -1,21 +1,21 @@
 .background {
-    display: flex;
+  display: flex;
   flex-direction: column;
   justify-content: center; /* вертикальне центрування */
-  align-items: center;     /* горизонтальне центрування */
+  align-items: center; /* горизонтальне центрування */
   min-height: 100vh;
   margin: 0;
-
   height: 100%;
   background-color: #fff;
-  background-image:
-    linear-gradient(to right,hsl(0 0% 96%/ 1) 1px, transparent 1px),
-    linear-gradient(to bottom,hsl(0 0% 96%/ 1) 1px, transparent 1px);
+  background-image: linear-gradient(
+      to right,
+      hsl(0 0% 96%/ 1) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, hsl(0 0% 96%/ 1) 1px, transparent 1px);
   background-size: 40px 40px;
   gap: 40px;
-
 }
-
 
 .title {
   font-family: 'Inter', sans-serif;
@@ -26,7 +26,7 @@
   color: #111111;
   text-align: center;
   margin: 0;
- /*  padding: 20px; */
+  /*  padding: 20px; */
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -40,12 +40,11 @@
   margin-top: -20px;
 }
 
-
 .topCards {
   display: flex;
   gap: 400px;
   padding: 10px 276px 20px 0;
-     flex-wrap: wrap;
+  flex-wrap: wrap;
   justify-content: flex-start;
 }
 
@@ -62,19 +61,39 @@
   padding: 20px 30px;
   background-color: #f0f0f0;
   cursor: pointer;
- width: 140px;
- height: 140px;
+  width: 140px;
+  height: 140px;
   font-weight: 700;
   transition: all 0.3s ease;
   text-align: center;
-    transition: all 0.3s ease;
+  transition: all 0.3s ease;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-
 }
 
 .card:hover {
   transform: translateY(-5px);
   background-color: #ff6b6b;
-  color:#fff;
+  color: #fff;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 50px;
+  }
+  .topCards {
+    gap: 60px;
+    padding: 30px 0 30px 0;
+  }
+  .bottomCards {
+    gap: 60px;
+    padding: 0;
+    margin-bottom: 40px;
+  }
+  .card {
+    width: 100px;
+    height: 100px;
+    padding: 30px 20px;
+    text-align: center;
+  }
 }

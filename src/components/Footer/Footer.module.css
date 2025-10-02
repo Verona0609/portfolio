@@ -1,36 +1,52 @@
-footer{
-  position: fixed;      /* фіксуємо футер на екрані */
-  bottom: 20px;        /* відступ від низу */
-  left: 50%;            /* по центру горизонтально */
+footer {
+  position: fixed; /* фіксуємо футер на екрані */
+  bottom: 20px; /* відступ від низу */
+  left: 50%; /* по центру горизонтально */
   transform: translateX(-50%); /* центр по горизонталі */
   display: flex;
   justify-content: center;
   z-index: 100;
   width: auto;
-
 }
-.box{
+.box {
   border: 1px solid #e2dfdf;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-background: #fff;
-border-radius: 40px;
-width: 442px;
-height: 56px;
-display: flex;
-justify-content: center;
-align-items: center;
-gap:14px;
+  background: #fff;
+  border-radius: 40px;
+  width: 442px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
 }
-.menuItem{
+.menuItem {
   border-radius: 100%;
   width: 40px;
   height: 40px;
   display: flex;
   justify-content: center;
-  align-items:center;
+  align-items: center;
   background-color: #f3f3f3;
 }
 
-.icon{
-  fill:#676666;
+.icon {
+  fill: #676666;
+}
+@media (max-width: 768px) {
+  .box {
+    width: 320px;
+    height: 48px;
+    gap: 6px;
+  }
+  .menuItem {
+    border-radius: 100%;
+    width: 32px;
+    height: 32px;
+  }
+
+  .icon {
+    width: 17.6px;
+    height: 17.6px;
+  }
 }
