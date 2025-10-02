@@ -83,7 +83,8 @@
   }
   .topCards {
     gap: 60px;
-    padding: 30px 0 30px 0;
+    /*    padding: 30px 0 30px 0; */
+    padding: 0;
   }
   .bottomCards {
     gap: 60px;
