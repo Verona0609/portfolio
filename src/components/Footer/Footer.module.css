@@ -8,30 +8,50 @@ footer {
   z-index: 100;
   width: auto;
 }
+
 .box {
-  border: 1px solid #e2dfdf;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  background: #fff;
-  border-radius: 40px;
-  width: 442px;
-  height: 56px;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   gap: 14px;
+  padding: 8px 16px;
+  border-radius: 40px;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
 }
+
 .menuItem {
-  border-radius: 100%;
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #f3f3f3;
+  border-radius: 50%;
+  transition: transform 0.3s ease, z-index 0.3s ease;
+  cursor: pointer;
+}
+
+.menuItem:hover {
+  transform: scale(1.5);
+  z-index: 10;
+}
+
+.activeFooter {
+  transform: translateY(-10px);
 }
 
 .icon {
   fill: #676666;
+}
+.icon:hover {
+  fill: #ff6b6b;
 }
 @media (max-width: 768px) {
   .box {
