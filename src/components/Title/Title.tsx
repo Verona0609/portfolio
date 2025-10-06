@@ -5,7 +5,7 @@ const Title = () => {
   return (
     <div className={css.background}>
       <div className={css.topCards}>
-        <Link className={`${css.card} ${css.card1}`} to="/about">
+        <Link className={`${css.card} ${css.card1}`} to="/aboutme">
           About Me
         </Link>
         <Link className={`${css.card} ${css.card1}`} to="/projects">
