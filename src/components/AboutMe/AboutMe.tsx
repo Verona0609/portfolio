@@ -45,7 +45,11 @@ const AboutMe = () => {
             </ul>
           </div>
         </div>
-        <img src="../../../assets/images/AboutMe/mount-mob.webp" alt="" />
+        <img
+          className={css.image}
+          src="/src/assets/images/AboutMe/mount-mob.webp"
+          alt="mount-mob"
+        />
       </div>
     </section>
   );
