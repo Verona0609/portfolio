@@ -1,5 +1,6 @@
 import { Icon } from '../Icon/Icon';
 import css from './AboutMe.module.css';
+import mountMob from '../../assets/images/AboutMe/mount-mob.webp';
 
 const AboutMe = () => {
   return (
@@ -19,7 +20,7 @@ const AboutMe = () => {
               web applications that are both fast and user-friendly.
             </p>
             <button className={css.openBtn}>
-              <Icon id="icon-Icon" size={22} />
+              <Icon id="icon-open" className={css.open} size={22} />
             </button>
           </div>
           <p className={css.text}>
@@ -45,11 +46,7 @@ const AboutMe = () => {
             </ul>
           </div>
         </div>
-        <img
-          className={css.image}
-          src="/src/assets/images/AboutMe/mount-mob.webp"
-          alt="mount-mob"
-        />
+        <img className={css.image} src={mountMob} alt="mount-mob" />
       </div>
     </section>
   );
