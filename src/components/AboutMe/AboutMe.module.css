@@ -30,6 +30,7 @@
 
 .box {
   display: flex;
+  justify-content: space-between;
 }
 
 .hobbyTitle {
@@ -46,10 +47,51 @@
   font-size: 24px;
   line-height: 150%;
   color: #000;
-  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+  position: relative;
+  width: 360px;
+  height: 492px;
 }
-.item {
+.item1 {
+  position: absolute;
+  left: 13%;
+  top: 10%;
 }
+.item2 {
+  position: absolute;
+  left: 44%;
+  top: 18%;
+}
+.item3 {
+  position: absolute;
+  left: 24%;
+  top: 33%;
+}
+.item4 {
+  position: absolute;
+  right: 24%;
+  top: 49%;
+}
+.item5 {
+  position: absolute;
+  left: 9%;
+  top: 58%;
+}
+.item6 {
+  position: absolute;
+  right: 34%;
+  top: 76%;
+}
+.hobbyList li {
+  transition: transform 0.3s, opacity 0.3s; /* плавний ефект */
+}
+
+.hobbyList li:hover {
+  transform: scale(1.1);
+  color: #fd5a5a;
+  cursor: pointer;
+}
+
 .image {
   max-width: 500px;
   margin: 0 auto;
@@ -61,7 +103,10 @@
   height: 20px;
   display: flex;
   align-items: center;
+  display: flex;
+  transition: transform 0.3s, opacity 0.3s;
 }
 .open {
-  fill: aqua;
+  fill: #fd5a5a;
+  transform: scale(1.1);
 }

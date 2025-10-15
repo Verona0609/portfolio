@@ -37,12 +37,12 @@ const AboutMe = () => {
           <div>
             <h2 className={css.hobbyTitle}>Beyond the code</h2>
             <ul className={css.hobbyList}>
-              <li className={css.item}>Dance</li>
-              <li className={css.item}>Books</li>
-              <li className={css.item}>Tennis</li>
-              <li className={css.item}>Piano</li>
-              <li className={css.item}>Hiking</li>
-              <li className={css.item}>Coffee</li>
+              <li className={css.item1}>Dance</li>
+              <li className={css.item2}>Books</li>
+              <li className={css.item3}>Tennis</li>
+              <li className={css.item4}>Piano</li>
+              <li className={css.item5}>Hiking</li>
+              <li className={css.item6}>Coffee</li>
             </ul>
           </div>
         </div>
