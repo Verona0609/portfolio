@@ -33,8 +33,9 @@ const AboutMe = () => {
             smart UI, and teamwork that turns ideas into real, user-focused
             products.
           </p>
-
-          <div>
+        </div>
+        <div className={css.desktopFlex}>
+          <div className={css.wrap}>
             <h2 className={css.hobbyTitle}>Beyond the code</h2>
             <ul className={css.hobbyList}>
               <li className={css.item1}>Dance</li>
@@ -45,8 +46,9 @@ const AboutMe = () => {
               <li className={css.item6}>Coffee</li>
             </ul>
           </div>
+
+          <img className={css.image} src={mountMob} alt="mount-mob" />
         </div>
-        <img className={css.image} src={mountMob} alt="mount-mob" />
       </div>
     </section>
   );
