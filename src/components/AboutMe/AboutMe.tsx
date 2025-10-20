@@ -1,38 +1,47 @@
 import { Icon } from '../Icon/Icon';
 import css from './AboutMe.module.css';
 import mountMob from '../../assets/images/AboutMe/mount-mob.webp';
+import mountDesk from '../../assets/images/AboutMe/mount-desc.webp';
+import meDesk from '../../assets/images/AboutMe/me-desc.webp';
 
 const AboutMe = () => {
   return (
     <section>
-      <div>
-        <div className={css.photo}>
-          <h1 className={css.title}>
-            Hi there! <br /> I’m Veronika Dyka <br />
-            Fullstack Developper
-          </h1>
-        </div>
-        <div className={css.wrap}>
-          <div className={css.box}>
-            <p className={css.text}>
-              Specializing in React.js, Next.js, JavaScript, and TypeScript,
-              with 1.5 years of hands-on experience building responsive, modern
-              web applications that are both fast and user-friendly.
-            </p>
-            <button className={css.openBtn}>
-              <Icon id="icon-open" className={css.open} size={22} />
-            </button>
+      <div className={css.container}>
+        <div className={css.desktopFlex}>
+          <div className={css.photo}>
+            <h1 className={css.titleMob}>
+              Hi there! <br /> I’m Veronika Dyka <br />
+              Fullstack Developper
+            </h1>
           </div>
-          <p className={css.text}>
-            Skilled in REST APIs, Node.js integration, and NoSQL databases
-            (MongoDB).{' '}
-          </p>
-          <p className={css.text}>
-            I’ve spent over 500 hours coding, constantly exploring new
-            technologies and improving my craft. Passionate about clean code,
-            smart UI, and teamwork that turns ideas into real, user-focused
-            products.
-          </p>
+          <img className={css.meImage} src={meDesk} alt="me-desc" />
+          <div className={css.wrap}>
+            <h1 className={css.titleDesctop}>
+              Hi there! <br /> I’m Veronika Dyka <br />
+              Fullstack Developper
+            </h1>
+            <div className={css.box}>
+              <p className={css.text}>
+                Specializing in React.js, Next.js, JavaScript, and TypeScript,
+                with 1.5 years of hands-on experience building responsive,
+                modern web applications that are both fast and user-friendly.
+              </p>
+              <button className={css.openBtn}>
+                <Icon id="icon-open" className={css.open} size={22} />
+              </button>
+            </div>
+            <p className={css.text}>
+              Skilled in REST APIs, Node.js integration, and NoSQL databases
+              (MongoDB).{' '}
+            </p>
+            <p className={css.text}>
+              I’ve spent over 500 hours coding, constantly exploring new
+              technologies and improving my craft. Passionate about clean code,
+              smart UI, and teamwork that turns ideas into real, user-focused
+              products.
+            </p>
+          </div>
         </div>
         <div className={css.desktopFlex}>
           <div className={css.wrap}>
@@ -48,6 +57,7 @@ const AboutMe = () => {
           </div>
 
           <img className={css.image} src={mountMob} alt="mount-mob" />
+          <img className={css.imageDesk} src={mountDesk} alt="mount-desk" />
         </div>
       </div>
     </section>

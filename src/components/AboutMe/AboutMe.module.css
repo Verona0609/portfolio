@@ -2,6 +2,10 @@
   padding: 0 16px 0 16px;
   margin: 0 auto;
 }
+.wrapSec {
+  padding: 0 16px 0 16px;
+  margin: 0 auto;
+}
 .photo {
   position: relative;
   background-image: url('/src/assets/images/AboutMe/me-mob.webp');
@@ -9,15 +13,18 @@
   max-width: 360px;
   height: 480px;
   padding: 40px 30px 0 30px;
-  margin: 0 auto;
+  margin: 0;
   margin-bottom: 40px;
 }
-.title {
+.titleMob {
   font-family: var(--second-family);
   font-weight: 700;
   font-size: 24px;
   line-height: 125%;
   color: #fff;
+}
+.titleDesctop {
+  display: none;
 }
 .text {
   font-family: var(--second-family);
@@ -31,6 +38,7 @@
 .box {
   display: flex;
   justify-content: space-between;
+  margin-top: 30px;
 }
 
 .hobbyTitle {
@@ -110,4 +118,64 @@
 .open {
   fill: #fd5a5a;
   transform: scale(1.1);
+}
+.imageDesk {
+  display: none;
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 1440px;
+  }
+  .wrap {
+    padding: 60px 60px 74px 56px;
+    margin: 0 auto;
+  }
+  .desktopFlex {
+    display: flex;
+  }
+  .photo {
+    display: none;
+  }
+  .meImage {
+    width: 50%;
+    max-width: 651px;
+    height: 868px;
+  }
+  .titleMob {
+    display: none;
+  }
+  .titleDesctop {
+    display: block;
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 108%;
+    color: #000;
+    margin-bottom: 64px;
+  }
+  .text {
+    margin-bottom: 30px;
+    font-size: 26px;
+    line-height: 138%;
+  }
+  .imageDesk {
+    display: block;
+    width: 50%;
+    height: 970px;
+  }
+  .openBtn {
+    display: none;
+  }
+  .image {
+    display: none;
+  }
+  .hobbyTitle {
+    margin-top: 0;
+  }
+
+  /*   .item1 {
+    position: absolute;
+    left: 12%;
+    top: 18%;
+  } */
 }
