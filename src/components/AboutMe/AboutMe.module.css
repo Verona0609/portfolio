@@ -120,9 +120,6 @@
 .meImage {
   display: none;
 }
-.imageDesk {
-  display: none;
-}
 
 @media (min-width: 768px) {
   .container {
@@ -164,7 +161,6 @@
     line-height: 138%;
   }
   .imageDesk {
-    display: block;
     width: 500px;
     height: 700px;
   }

@@ -55,9 +55,17 @@ const AboutMe = () => {
               <li className={css.item6}>Coffee</li>
             </ul>
           </div>
+          <picture>
+            <source srcSet={mountMob} media="(max-width:767px)" />
+            <source srcSet={mountDesk} media="(min-width: 768px)" />
 
-          <img className={css.image} src={mountMob} alt="mount-mob" />
-          <img className={css.imageDesk} src={mountDesk} alt="mount-desk" />
+            <img
+              className={css.imageDesk}
+              src={mountDesk}
+              alt="mount-desk"
+              loading="lazy"
+            />
+          </picture>
         </div>
       </div>
     </section>
