@@ -28,8 +28,8 @@ const Title = () => {
         <Link className={css.card} to="/tools">
           Tools
         </Link>
-        <Link className={css.card} to="/justme">
-          Just Me
+        <Link className={css.card} to="/finalTouch">
+          Final touch
         </Link>
       </div>
     </div>

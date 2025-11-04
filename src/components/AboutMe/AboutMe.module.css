@@ -90,7 +90,7 @@
   top: 76%;
 }
 .hobbyList li {
-  transition: transform 0.3s, opacity 0.3s; /* плавний ефект */
+  transition: transform 0.3s, opacity 0.3s;
 }
 
 .hobbyList li:hover {

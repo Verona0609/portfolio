@@ -11,3 +11,5 @@ export const Icon: React.FC<IconProps> = ({ id, className, size }) => {
     </svg>
   );
 };
+
+export default Icon;
