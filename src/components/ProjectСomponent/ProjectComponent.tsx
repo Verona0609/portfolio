@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom';
 import { Project } from '../../constants/PROJECTS_DATA';
 import Icon from '../Icon/Icon';
 import css from './ProjectComponent.module.css';
@@ -16,18 +17,20 @@ const ProjectComponent: React.FC<ProjectComponentProps> = ({ project }) => {
           <img src={project.imageDesk} alt={project.title} />
         </picture>
       </div>
-      <div>
+      <div className={css.secondPart}>
         <div className={css.titleBox}>
           <h2 className={css.title}>{project.title}</h2>
           <a href={project.github} className={css.btnGithub}>
             <Icon id="icon-github" size={18} />
           </a>
         </div>
-        <div className={css.textbox}>
+        <div className={css.textBox}>
           <p className={css.text}>{project.description}</p>
-          <a href={project.liveDemo} className={css.btnLive}>
-            TAKE A LOOK
-          </a>
+          <div className={css.wrap}>
+            <a href={project.liveDemo} className={css.btnLive}>
+              TAKE A LOOK
+            </a>
+          </div>
         </div>
       </div>
     </section>

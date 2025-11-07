@@ -15,7 +15,12 @@ const AboutMe = () => {
               Fullstack Developper
             </h1>
           </div>
-          <img className={css.meImage} src={meDesk} alt="me-desc" />
+          <img
+            className={css.meImage}
+            src={meDesk}
+            alt="me-desc"
+            loading="lazy"
+          />
           <div className={css.wrap}>
             <h1 className={css.titleDesctop}>
               Hi there! <br /> I’m Veronika Dyka <br />
@@ -24,8 +29,8 @@ const AboutMe = () => {
             <div className={css.box}>
               <p className={css.text}>
                 Specializing in React.js, Next.js, JavaScript, and TypeScript,
-                with 1.5 years of hands-on experience building responsive,
-                modern web applications that are both fast and user-friendly.
+                with 2 years of hands-on experience building responsive, modern
+                web applications that are both fast and user-friendly.
               </p>
               <button className={css.openBtn}>
                 <Icon id="icon-open" className={css.open} size={22} />
@@ -36,7 +41,7 @@ const AboutMe = () => {
               (MongoDB).{' '}
             </p>
             <p className={css.text}>
-              I’ve spent over 500 hours coding, constantly exploring new
+              I’ve spent over 800 hours coding, constantly exploring new
               technologies and improving my craft. Passionate about clean code,
               smart UI, and teamwork that turns ideas into real, user-focused
               products.
