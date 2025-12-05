@@ -61,6 +61,18 @@
   color: #fff;
   padding: 16px 26px;
   margin: 0 auto;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+}
+.btnLive:hover {
+  transform: translateY(-6px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.5);
+}
+
+.btnLive:active {
+  transform: translateY(-2px) scale(1);
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
 }
 @media (min-width: 768px) {
   .card {

@@ -200,6 +200,61 @@
     right: 0;
     top: 86%;
   }
+  .hobbyList abbr {
+    position: relative;
+    cursor: pointer;
+    text-decoration: underline dotted;
+    color: #333;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+
+  /* Зміна кольору та легке збільшення на hover */
+  .hobbyList abbr:hover {
+    color: #ff5722;
+    transform: scale(1.05);
+    text-decoration-color: #ff5722;
+  }
+
+  /* Кастомний тултіп */
+  .hobbyList abbr::after {
+    content: attr(data-tooltip); /* беремо текст з title */
+    position: absolute;
+    bottom: 125%; /* над елементом */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #222;
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 6px;
+    white-space: nowrap;
+    font-size: 0.85rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 1000;
+  }
+
+  /* Стрілочка для тултіпа */
+  .hobbyList abbr::before {
+    content: '';
+    position: absolute;
+    bottom: 115%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 6px;
+    border-style: solid;
+    border-color: #222 transparent transparent transparent;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  /* Показати тултіп на hover */
+  .hobbyList abbr:hover::after,
+  .hobbyList abbr:hover::before {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-5px);
+  }
 }
 
 @media (min-width: 1000px) {

@@ -52,12 +52,36 @@ const AboutMe = () => {
           <div className={css.wrap}>
             <h2 className={css.hobbyTitle}>Beyond the code</h2>
             <ul className={css.hobbyList}>
-              <li className={css.item1}>Dance</li>
-              <li className={css.item2}>Books</li>
-              <li className={css.item3}>Tennis</li>
-              <li className={css.item4}>Piano</li>
-              <li className={css.item5}>Hiking</li>
-              <li className={css.item6}>Coffee</li>
+              <li className={css.item1}>
+                <abbr data-tooltip="Dance: because happiness sometimes needs choreography.">
+                  Dance
+                </abbr>
+              </li>
+              <li className={css.item2}>
+                <abbr data-tooltip="Books: because sometimes you need a vacation from your own brain.">
+                  Books
+                </abbr>
+              </li>
+              <li className={css.item3}>
+                <abbr data-tooltip="Tennis: hitting a tiny ball and hoping physics is on your side.">
+                  Tennis
+                </abbr>
+              </li>
+              <li className={css.item4}>
+                <abbr data-tooltip="Piano: making your neighbors question their life choices since forever.">
+                  Piano
+                </abbr>
+              </li>
+              <li className={css.item5}>
+                <abbr data-tooltip="Hiking: walking for hours to eat snacks with a view.">
+                  Hiking
+                </abbr>
+              </li>
+              <li className={css.item6}>
+                <abbr data-tooltip="Coffee: the reason I look alive in the morning.">
+                  Coffee
+                </abbr>
+              </li>
             </ul>
           </div>
           <picture>

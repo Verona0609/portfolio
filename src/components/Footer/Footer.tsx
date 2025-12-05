@@ -18,7 +18,7 @@ const Footer = () => {
         <Link className={css.menuItem} to="/aboutme">
           <Icon id="icon-user" className={css.icon} size={22} />
         </Link>
-        <a className={css.menuItem} href="/https://github.com/Verona0609">
+        <a className={css.menuItem} href="https://github.com/Verona0609">
           <Icon id="icon-github" className={css.icon} size={22} />
         </a>
         <a
