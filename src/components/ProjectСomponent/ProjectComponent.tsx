@@ -20,14 +20,26 @@ const ProjectComponent: React.FC<ProjectComponentProps> = ({ project }) => {
       <div className={css.secondPart}>
         <div className={css.titleBox}>
           <h2 className={css.title}>{project.title}</h2>
-          <a href={project.github} className={css.btnGithub}>
+          <a
+            href={project.github}
+            className={css.btnGithub}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open GitHub repository"
+          >
             <Icon id="icon-github" size={18} />
           </a>
         </div>
         <div className={css.textBox}>
           <p className={css.text}>{project.description}</p>
           <div className={css.wrap}>
-            <a href={project.liveDemo} className={css.btnLive}>
+            <a
+              href={project.liveDemo}
+              className={css.btnLive}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open live demo"
+            >
               TAKE A LOOK
             </a>
           </div>

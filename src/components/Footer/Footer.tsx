@@ -6,28 +6,41 @@ const Footer = () => {
   return (
     <footer>
       <div className={css.box}>
-        <Link className={css.menuItem} to="/">
+        <a className={css.menuItem} href="/">
           <Icon id="icon-home" className={css.icon} size={22} />
-        </Link>
-        <Link className={css.menuItem} to="/projects">
+        </a>
+        <a className={css.menuItem} href="/projects">
           <Icon id="icon-light" className={css.icon} size={22} />
-        </Link>
-        <Link className={css.menuItem} to="/tools">
+        </a>
+        <a className={css.menuItem} href="/tools">
           <Icon id="icon-stack" className={css.icon} size={22} />
-        </Link>
-        <Link className={css.menuItem} to="/aboutme">
+        </a>
+        <a className={css.menuItem} href="/aboutme">
           <Icon id="icon-user" className={css.icon} size={22} />
-        </Link>
-        <a className={css.menuItem} href="https://github.com/Verona0609">
+        </a>
+        <a
+          className={css.menuItem}
+          href="https://github.com/Verona0609"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Open GitHub repository"
+        >
           <Icon id="icon-github" className={css.icon} size={22} />
         </a>
         <a
           className={css.menuItem}
           href="https://www.linkedin.com/in/veronika-dyka/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Open linkedin"
         >
           <Icon id="icon-linkedin" className={css.icon} size={22} />
         </a>
-        <a className={css.menuItem} href="mailto:veronika.dyka06@gmail.com">
+        <a
+          className={css.menuItem}
+          href="mailto:veronika.dyka06@gmail.com"
+          aria-label="send email"
+        >
           <Icon id="icon-mail" className={css.icon} size={22} />
         </a>
         <button className={css.menuItem} type="button">
