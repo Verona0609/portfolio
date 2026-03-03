@@ -10,16 +10,6 @@ export interface Project {
 export const PROJECTS_DATA: Project[] = [
   {
     id: 1,
-    title: 'TRAVEL TRUCKS',
-    description:
-      'is web application for browsing and renting campers. The app is built with React, Redux Toolkit, and CSS Module and deployed on Vercel. It features a camper catalog, filtering, and a favorites system — all within a clean, responsive UI.',
-    imageMob: '/images/projects/project1-mob.webp',
-    imageDesk: '/images/projects/project1-desk.webp',
-    github: 'https://github.com/Verona0609/TravelTrucks',
-    liveDemo: 'https://travel-trucks-pied-three.vercel.app/',
-  },
-  {
-    id: 2,
     title: 'ADOPTLY',
     description:
       'is react frontend application providing a clean, user-friendly interface to interact with a Gitea backend. Built with modern web development tools, it follows best practices for scalability and maintainability.',
@@ -27,6 +17,16 @@ export const PROJECTS_DATA: Project[] = [
     imageDesk: '/images/projects/project2-desk.webp',
     github: 'https://github.com/DFurtune/adoptly-frontend',
     liveDemo: 'https://dfurtune.github.io/adoptly-frontend/',
+  },
+  {
+    id: 2,
+    title: 'TRAVEL TRUCKS',
+    description:
+      'is web application for browsing and renting campers. The app is built with React, Redux Toolkit, and CSS Module and deployed on Vercel. It features a camper catalog, filtering, and a favorites system — all within a clean, responsive UI.',
+    imageMob: '/images/projects/project1-mob.webp',
+    imageDesk: '/images/projects/project1-desk.webp',
+    github: 'https://github.com/Verona0609/TravelTrucks',
+    liveDemo: 'https://travel-trucks-pied-three.vercel.app/',
   },
   {
     id: 3,
